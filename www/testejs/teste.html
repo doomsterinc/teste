@@ -3,17 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>teste</title>
+	<script type="text/javascript">
+		var executar = function() {
+		var caractere = "\ Octal:..................\251, \256, \266 \n\ Latin 1 Hexadecimal:....\xA9, \xAE, \xB6 \n\ Latin 1 Unicode:........\u00A9, \u00AE, \u00B6" 
+		alert(caractere);
+		}
+	</script>
 </head>
 <body>
-	<div id="tudo">
-		<h1>Capítulo 1</h1>
-			<p class="xpto" id="teste">document.write() - Após carregamento da página.</p> 
-			<p class="nav-arq" id="referencia">Arquivos exemplo: 
-				<a href="c1-onclick.html"> &laquo; anterior</a> | <a href="c1-onclick.html">próximo &raquo;</a>
-			</p> 
-			<button type="button" onclick="document.write('Conteúdo inserido após carregamento da página')">
-			Inserir conteúdo
-			</button> 	
-	</div>
+	<div id="tudo"> <h1>Capítulo 1</h1>
+		<p class="xpto" id="teste">Caracteres especiais.</p> 
+		<p class="nav-arq" id="referencia">Arquivos exemplo:
+		<a href="c1-write-apos-carregamento.html">&laquo; anterior</a> |
+		<a href="c1-#.html">próximo &raquo;</a></p>
+		<button type="button" onclick=" executar() ">Mostrar caracteres</button>
+</div>
 </body>
 </html>
